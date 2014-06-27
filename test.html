@@ -1,0 +1,69 @@
+<head><meta charset="utf-8">
+
+<title>normalize</title>
+<!-- Toggle normalize on and off by commenting out the next line -->
+<link href="normalize.css" rel="stylesheet">
+
+</head>
+<body>
+
+<h1>Normalize</h1>
+
+<p>
+  Block level elements like body, input, select and button don't get any margins. Only headings,
+  paragraphs, lists and horizontal rules do.
+</p>
+
+<p>
+  Buttons and inputs get the same font as regular elements.
+</p>
+
+<p>
+  Normal text
+  <input readonly
+    type="text"
+    style="width: 400px"
+    value="input text - this should look the same as the normal text" />
+</p>
+
+<p>
+  Horizontal rules are 1px high with a gray background. No borders.
+</p>
+
+<hr>
+
+<p style="width: 300px; border: 2px solid silver; padding: 10px">
+  <span style="
+    display: inline-block;
+    margin-left: -12px;
+    margin-top: -12px;
+    width: 300px;
+    height: 2px;
+    background: black">
+  </span>
+
+  The "border-box" model of box sizing is used so that borders and padding do not increase an
+  elements size. The black line at the top of this box should be the same as the box.
+
+</p>
+
+<form style="margin-left: 1rem">
+  A form <br>
+  <input type="text" placeholder="name"> <br>
+  <input type="text" placeholder="email"> <br>
+  <input type="password" placeholder="password"> <br>
+  <select>
+    <option disabled selected>select year ▾</option>
+    <option>1999</option>
+    <option>1998</option>
+    <option>1997</option>
+    <option>1996</option>
+    <option>1995</option>
+    <option>1994</option>
+    <option>1993</option>
+    <option>1992</option>
+    <option>1991</option>
+  </select> <br>
+  <textarea placeholder="address"></textarea> <br>
+  <button>submit</button>
+</form>
