@@ -17,11 +17,11 @@ footer, header, main, nav, section, summary { display: block; }
 * { box-sizing: border-box }
 
 /* Turn off margins on form controls and preformatted text blocks */
-body, button, input, select, textarea, pre { margin: 0; }
+body, button, input, select, textarea { margin: 0; }
 
 /* Add a single consistent margin to the bottom of the elements commonly
    used to markup "document" text */
-h1, h2, h3, h4, h5, h6, p, dl, ol, ul, hr {
+h1, h2, h3, h4, h5, h6, p, dl, ol, ul, hr, pre {
   margin-top: 0;
   margin-bottom: 1rem;
 }
