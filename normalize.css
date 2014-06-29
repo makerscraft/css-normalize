@@ -1,6 +1,10 @@
 /* Set the font sizes of input fields and buttons to the same as "normal" text */
 button, input, select, textarea { font-family: inherit; font-size: 100%; }
 
+/* Same for code and pre elements which unlike the form elements, the browser sizes
+   *up* by default */
+code, pre { font-size: 100%; }
+
 /* Prevent iOS from scaling up body text when the device is rotated into landscape mode */
 html { -webkit-text-size-adjust: 100%; }
 
