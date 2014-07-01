@@ -2,7 +2,7 @@
 
 set -e
 
-which webkit2png || {
+which -s webkit2png || {
   echo "webkit2png command not found" 1>&2
   echo "https://github.com/paulhammond/webkit2png" 1>&2
   echo "homebrew: brew install webkit2png" 1>&2
