@@ -1,0 +1,30 @@
+#!/bin/sh
+
+set -e
+
+which webkit2png || {
+  echo "webkit2png command not found" 1>&2
+  echo "https://github.com/paulhammond/webkit2png" 1>&2
+  echo "homebrew: brew install webkit2png" 1>&2
+  exit 1
+}
+
+rm -rf test.png
+
+# webkit2png isn't particularly unixy or "intuitive", it works great though, here's
+# what some of the more confusing args mean:
+
+# --scale=1        let's us set the width to something smaller than 800
+# --fullsize       captures the entire document, does not clip to a viewport
+# --height=1       sets the *min* height to 1px, overrides the default of 800
+# --filename=test  sets the "base" filename, the outpul file will still be test-full.png
+
+webkit2png \
+  --fullsize \
+  --scale=1 \
+  --width=600 \
+  --height=1 \
+  --filename=test \
+  test.html
+
+mv test-full.png test.png
