@@ -4,7 +4,7 @@ comments in `normalize.css` for specifics.
 
 Heavily inspired by [the reset module in BASSCSS][1]
 
-Here's what the test document looks like rendered:
+Here's what the `test.html` document looks like rendered with webkit:
 
 ![test image](test.png)
 
